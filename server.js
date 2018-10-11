@@ -92,6 +92,7 @@ function closeServer() {
 }
 
 if (require.main === module) {
+  console.log(DATABASE_URL);
   runServer(DATABASE_URL).catch(err => console.error(err));
 }
 
